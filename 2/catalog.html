@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/136498-nerds/2/">
+</head>
+  <body>
+    <header class="main-header">
+	  <div class="container">
+	    <div class="logo-small">
+		  <a href="index.html">
+		  <img src="placeholders/145x65.png" width="145" height="65" alt="Студия «Нёрдс»">
+		  </a>
+		</div>
+		<nav class="main-navigation">
+		  <ul>
+		    <li>
+			  <a href="index.html">Студия</a>
+			</li>
+		    <li>
+			  <a href="#">Клиенты</a>
+			</li>
+		    <li>
+			  <a href="catalog.html">Магазин</a>
+			</li>
+		    <li>
+			  <a href="#">Контакты</a>
+			</li>
+		    <li>
+			  <a href="#">
+			    <img src="placeholders/15x15.png" width="15" height="15" alt="Basket">
+			    Корзина
+			  </a>
+			</li>
+		  </ul>
+		</nav>
+		<h1>Добро пожаловать в магазин готовых макетов</h1>
+	  </div>
+	</header>
+	<main class="container">
+	  <div class="catalog-left">
+	    <h2>Стоимость:</h2>
+	    <div class="range-filter">
+          <div class="range-controls">
+		    <div class="scale">
+			  <div class="bar">
+			  </div>
+			</div>
+			<div class="min-toggle">
+			</div>
+			<div class="max-toggle">
+			</div>
+		  </div>
+		  <div class="price-controls">
+		    от
+			<input class="min-price" value="0" type="text">
+			до
+			<input class="max-price" value="15000" type="text">
+		  </div>
+		</div>
+		<form action="#" name="options-form" method="get">
+		  <h2>Сетка:</h2>
+		  
+		  <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
+		  <label for="adaptive-grid">Адаптивная</label><br>
+		  
+		  <input type="radio" name="grid-type" value="fixed" id="fixed-grid">
+		  <label for="fixed-grid">Фиксированная</label><br>
+		  
+		  <input type="radio" name="grid-type" value="responsive" id="responsive-grid">
+		  <label for="responsive-grid">Резиновая</label><br>
+		  
+		  <h2>Особенности:</h2>
+		  
+		  <input type="checkbox" name="checkbox-slider" id="slider" checked>
+		  <label for="slider">Слайдер</label><br>
+		  
+		  <input type="checkbox" name="checkbox-features" id="features">
+		  <label for="features">Блок преимуществ</label><br>
+		  
+		  <input type="checkbox" name="checkbox-news" id="news" checked>
+		  <label for="news">Новости</label><br>
+		  
+		  <input type="checkbox" name="checkbox-gallery" id="gallery">
+		  <label for="gallery">Галерея</label><br>
+		  
+		  <input type="checkbox" name="checkbox-basket" id="basket">
+		  <label for="basket">Корзина</label><br>
+          
+          <button class="show-btn">Показать</button>		  
+		</form>
+	  </div>
+	  <div class="catalog-right">
+	    <div class="sorting">
+		  <span>Сортировать:</span>
+		  <form action="#" name="sorting-form" method="get">
+		    <button class="sorting-btn">По цене</button>
+		    <button class="sorting-btn">По типу</button>
+		    <button class="sorting-btn">По функционалу</button>
+		    <button class="sorting-order sorting-order-desc"></button>
+		    <button class="sorting-order sorting-order-asc"></button>
+		  </form>
+		</div>
+		<div class="templates">
+		  <div class="template template-1">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-1">
+		  </div>
+		  <div class="template template-2">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-2">
+		  </div>
+		  <div class="template template-3">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-3">
+		  </div>
+		  <div class="template template-4">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-4">
+		  </div>
+		  <div class="template template-5">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-5">
+		  </div>
+		  <div class="template template-6">
+		    <img src="placeholders/240x270.png" width="240" height="270" alt="template-6">
+		  </div>
+		  
+		  <ul class="pages">
+              <li class="page page-1"><a href="#">1</a></li>
+	          <li class="page page-2"><a href="#">2</a></li>
+	          <li class="page page-3"><a href="#">3</a></li>
+	          <li class="page page-next"><a href="#">Следующая</a></li>
+          </ul>
+		</div>
+	  </div>
+	</main>
+	<footer class="main-footer">
+	  <section class="address">
+	    <div class="address-block">
+		  <h3>Nёrds design studio</h3>
+		  <p>
+		    191186, Санкт-Петербург,<br>
+			ул. Б. Конюшенная, д. 19.8<br>
+		  </p>
+		  <p>
+		    тел. +7(812)275-75-75
+		  </p>
+		  <a href="#" class="contact-us-btn">Напишите нам</a>
+		</div>
+	    <div class="bubble-logo">
+		  <img src="logo-small.png" width="45" height="45" alt="logo-small">
+		</div>
+	  </section>
+	  <section class="footer-social">
+	      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+	  </section>
+	  <h2>Давайте дружить, это выгодно!</h2>
+	  <p>
+	    Скидка 10% для друзей из социальных сетей
+	  </p>
+    </footer>
+  </body>
+</html>  
+	  
