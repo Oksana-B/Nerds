@@ -5,8 +5,159 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+	  <div class="container">
+	    <div class="logo-small">
+		  <img src="placeholders/145x65.png" width="145" height="65" alt="Студия «Нёрдс»">
+		</div>
+		<nav class="main-navigation">
+		  <ul>
+		    <li>
+			  <a href="index.html">Студия</a>
+			</li>
+		    <li>
+			  <a href="#">Клиенты</a>
+			</li>
+		    <li>
+			  <a href="catalog.html">Магазин</a>
+			</li>
+		    <li>
+			  <a href="#">Контакты</a>
+			</li>
+		    <li>
+			  <a href="#">
+			    <img src="placeholders/15x15.png" width="15" height="15" alt="Basket">
+			    Корзина
+			  </a>
+			</li>
+		  </ul>
+		</nav>
+		<div class="slider-buttons">
+		  <form action="#" name="slider-form" method="get">
+		    <input type="radio" name="slider-btn" value="slide-1" id="slider-1" checked>
+			<label for="slider-1" class="toggle"></label><br>
+			<input type="radio" name="slider-btn" value="slide-2" id="slider-2">
+			<label for="slider-2" class="toggle"></label><br>
+			<input type="radio" name="slider-btn" value="slide-3" id="slider-3">
+			<label for="slider-3" class="toggle"></label><br>
+		  </form>
+		</div>
+		<div class="slides">
+		  <div class="slide slide-1">
+		    <h2>Долго, дорого, скрупулезно</h2>
+			<p>
+			  Математически выверенный дизайн для вашего сайта или мобильного приложения
+			</p>
+	        <a href="#" class="button-find-out">Узнать больше</a>
+		  </div>
+          <div class="slide slide-2">
+		    <h2>Любите ли вы математику, как любим ее мы?</h2>
+			<p>
+			  Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать
+			</p>
+			<a href="#" class="button-find-out">Узнать больше</a>
+		  </div>
+          <div class="slide slide-3">
+			<h2>Только наркотики, только хардкор!</h2>
+			<p>
+			  Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов
+			</p>
+	        <a href="#" class="button-find-out">Узнать больше</a>		
+		  </div>
+		</div>
+	  </div>
+	</header>
+	<main class="container">
+	  <section class="orders">
+	    <div class="orders-1">
+		  <img src="placeholders/240x125.png" width="240" height="125" alt="website">
+		  <h3>Веб-сайты</h3>
+		  <p>
+		    Мир никогда не будет прежним после того как увидит ваш сайт!
+		  </p>
+		  <a href="#">Заказать</a>
+		</div>
+		<div class="orders-2">
+		  <img src="placeholders/240x125.png" width="240" height="125" alt="application">
+		  <h3>Приложения</h3>
+		  <p>
+		    Покорите топ-10 приложений в AppStore и Google Play
+		  </p>
+		  <a href="#">Заказать</a>
+		</div>
+		<div class="orders-3">
+		  <img src="placeholders/240x125.png" width="240" height="125" alt="presentation">
+		  <h3>Презентации</h3>
+		  <p>
+		    Вы даже не подозреваете, насколько вы изумительны!
+		  </p>
+		  <a href="#">Заказать</a>
+		</div>
+	  </section>
+	  <section class="about-us">
+	    <div class="abou-us-left">
+		  <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+		  <p>
+		    Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покаладая рук, как роботы.
+		  </p>
+		  <p>
+		    Выполняем заказы на разработку:
+		  </p>
+		  <ul>
+		    <li>Веб-сайтов любой сложности</li>
+			<li>Мобильных приложений для iOS и Android</li>
+			<li>Слайд-шоу и видео для корпоративных презентаций</li>
+		  </ul>
+		</div>
+		<div class="about-us-right">
+		  <img src="placeholders/190x80.png">
+		  <p>Since 2004</p>
+		  <p>Как мы работаем:</p>
+		  <ul>
+		    <li>С самоотдачей 146%</li>
+			<li>Соблюдая сроки на 100%/li>
+			<li>По предоплате 50%</li>
+		  </ul>
+		</div>
+	  </section>
+	  <section class="partners">
+	    <div class="partners-glukhanko">
+		  <img src="placeholders/200x35.png" width="200" height="35" alt="Glukhanko">
+		</div>
+		<div class="partners-htmlacademy">
+		  <img src="placeholders/200x70.png" width="200" height="70" alt="HTMLAcademy">
+		</div>
+		<div class="partners-barbershop">
+		  <img src="placeholders/210x100.png" width="210" height="100" alt="Barbershop Borodinski">
+		</div>
+	  </section>    
+    </main>
+    <footer class="main-footer">
+	  <section class="address">
+	    <div class="address-block">
+		  <h3>Nёrds design studio</h3>
+		  <p>
+		    191186, Санкт-Петербург,<br>
+			ул. Б. Конюшенная, д. 19.8<br>
+		  </p>
+		  <p>
+		    тел. +7(812)275-75-75
+		  </p>
+		  <a href="#" class="contact-us-btn">Напишите нам</a>
+		</div>
+	    <div class="bubble-logo">
+		  <img src="logo-small.png" width="45" height="45" alt="logo-small">
+		</div>
+	  </section>
+	  <section class="footer-social">
+	      <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+	  </section>
+	  <h2>Давайте дружить, это выгодно!</h2>
+	  <p>
+	    Скидка 10% для друзей из социальных сетей
+	  </p>
+    </footer>	
   </body>
 </html>
