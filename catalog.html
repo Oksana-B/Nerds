@@ -39,67 +39,79 @@
 	</header>
 	<main class="container">
 	  <div class="catalog-left">
-	    <h2>Стоимость:</h2>
-	    <div class="range-filter">
-          <div class="range-controls">
-		    <div class="scale">
-			  <div class="bar">
-			  </div>
-			</div>
-			<div class="min-toggle">
-			</div>
-			<div class="max-toggle">
-			</div>
-		  </div>
-		  <div class="price-controls">
-		    от
-			<input class="min-price" value="0" type="text">
-			до
-			<input class="max-price" value="15000" type="text">
-		  </div>
-		</div>
-		<form action="#" name="options-form" method="get">
-		  <h2>Сетка:</h2>
+	    <form action="#" name="options-form" method="get">
+	      <fieldset>
+		    <legend>Стоимость:</legend>
+	        <div class="range-filter">
+              <div class="range-controls">
+		        <div class="scale">
+			      <div class="bar">
+			      </div>
+			    </div>
+			    <div class="min-toggle">
+			    </div>
+			    <div class="max-toggle">
+			    </div>
+		      </div>
+		      <div class="price-controls">
+		        от
+			    <input class="min-price" value="0" type="text">
+			    до
+			    <input class="max-price" value="15000" type="text">
+		      </div>
+		    </div>
+		  </fieldset>
 		  
-		  <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
-		  <label for="adaptive-grid">Адаптивная</label><br>
+		  <fieldset>
+		    <legend>Сетка:</legend>
+		    <input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
+		    <label for="adaptive-grid">Адаптивная</label><br>
 		  
-		  <input type="radio" name="grid-type" value="fixed" id="fixed-grid">
-		  <label for="fixed-grid">Фиксированная</label><br>
+		    <input type="radio" name="grid-type" value="fixed" id="fixed-grid">
+		    <label for="fixed-grid">Фиксированная</label><br>
 		  
-		  <input type="radio" name="grid-type" value="responsive" id="responsive-grid">
-		  <label for="responsive-grid">Резиновая</label><br>
+		    <input type="radio" name="grid-type" value="responsive" id="responsive-grid">
+		    <label for="responsive-grid">Резиновая</label><br>
+		  </fieldset>
 		  
-		  <h2>Особенности:</h2>
+		  <fieldset>
+		    <legend>Особенности:</legend>
 		  
-		  <input type="checkbox" name="checkbox-slider" id="slider" checked>
-		  <label for="slider">Слайдер</label><br>
+		    <input type="checkbox" name="checkbox-slider" id="slider" checked>
+		    <label for="slider">Слайдер</label><br>
 		  
-		  <input type="checkbox" name="checkbox-features" id="features">
-		  <label for="features">Блок преимуществ</label><br>
+		    <input type="checkbox" name="checkbox-features" id="features">
+		    <label for="features">Блок преимуществ</label><br>
 		  
-		  <input type="checkbox" name="checkbox-news" id="news" checked>
-		  <label for="news">Новости</label><br>
+		    <input type="checkbox" name="checkbox-news" id="news" checked>
+		    <label for="news">Новости</label><br>
 		  
-		  <input type="checkbox" name="checkbox-gallery" id="gallery">
-		  <label for="gallery">Галерея</label><br>
+		    <input type="checkbox" name="checkbox-gallery" id="gallery">
+		    <label for="gallery">Галерея</label><br>
 		  
-		  <input type="checkbox" name="checkbox-basket" id="basket">
-		  <label for="basket">Корзина</label><br>
-          
+		    <input type="checkbox" name="checkbox-basket" id="basket">
+		    <label for="basket">Корзина</label><br>
+		  </fieldset>
+		  
           <button class="show-btn">Показать</button>		  
 		</form>
 	  </div>
 	  <div class="catalog-right">
-	    <div class="sorting">
+	    <div class="sorting-buttons">
 		  <span>Сортировать:</span>
-		  <form action="#" name="sorting-form" method="get">
-		    <button class="sorting-btn">По цене</button>
-		    <button class="sorting-btn">По типу</button>
-		    <button class="sorting-btn">По функционалу</button>
-		    <button class="sorting-order sorting-order-desc"></button>
-		    <button class="sorting-order sorting-order-asc"></button>
-		  </form>
+		  <ul>
+		    <li>
+			  <a class="sorting">По цене</a>
+		    </li>
+			<li>
+			  <a class="sorting">По типу</a>
+		    </li>
+			<li>
+			  <a class="sorting">По функционалу</a>
+		    </li>
+		  </ul>
+		  <div class="sorting-order sorting-order-desc"></div>
+		  <div class="sorting-order sorting-order-asc"></div>
 		</div>
 		<div class="templates">
 		  <div class="template template-1">
