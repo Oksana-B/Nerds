@@ -8,34 +8,35 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<div class="logo-small">
-					<a href="index.html">
-						<img src="img/logo-small.svg" width="139" height="56" alt="Студия «Нёрдс»">
-					</a>
+				<div class="header-1">
+					<div class="logo-small">
+						<a href="index.html">
+							<img src="img/logo-small.svg" width="139" height="56" alt="Студия «Нёрдс»">
+						</a>
+					</div>
+					<nav class="main-navigation">
+						<ul>
+							<li>
+								<a href="index.html">Студия</a>
+							</li>
+							<li>
+								<a href="#">Клиенты</a>
+							</li>
+							<li>
+								<a href="catalog.html">Магазин</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+							<li>
+								<a href="#">Корзина</a>
+							</li>
+						</ul>
+					</nav>
 				</div>
-				<nav class="main-navigation">
-					<ul>
-						<li>
-							<a href="index.html">Студия</a>
-						</li>
-						<li>
-							<a href="#">Клиенты</a>
-						</li>
-						<li>
-							<a href="catalog.html">Магазин</a>
-						</li>
-						<li>
-							<a href="#">Контакты</a>
-						</li>
-						<li>
-							<a href="#">
-								<img src="placeholders/15x15.png" width="15" height="15" alt="Basket">
-								<span>Корзина</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<h1>Добро пожаловать в магазин готовых макетов</h1>
+				<div class="header-2">
+					<h1>Добро пожаловать в магазин готовых макетов</h1>
+				</div>
 			</div>
 		</header>
 		<main class="container">
@@ -46,13 +47,10 @@
 						<div class="range-filter">
 							<div class="range-controls">
 								<div class="scale">
-									<div class="bar">
-									</div>
+									<div class="bar"></div>
 								</div>
-								<div class="min-toggle">
-								</div>
-								<div class="max-toggle">
-								</div>
+								<div class="toggle min-toggle"></div>
+								<div class="toggle max-toggle"></div>
 							</div>
 							<div class="price-controls">
 								<span>от</span>
@@ -84,7 +82,7 @@
 						<input type="checkbox" name="checkbox-basket" id="basket">
 						<label for="basket">Корзина</label><br>
 					</fieldset>
-					<button class="show-btn">Показать</button>			
+					<button type="submit" class="show-btn">Показать</button>
 				</form>
 			</div>
 			<div class="catalog-right">
@@ -106,22 +104,60 @@
 				</div>
 				<div class="templates">
 					<div class="template">
+						<div class="browser">
+							<div>
+							</div>
 						<img src="img/catalog/aviator.jpg" width="240" height="240" alt="Aviator">
+						<div class="template-description">
+							<h2 class="template-name">Aviator</h2>
+							<p>Одностраничный макет с авторским дизайном</p>
+							<a>8000 р.</a>
+						</div>
 					</div>
 					<div class="template">
+						<div class="browser"></div>
 						<img src="img/catalog/sunset.jpg" width="240" height="240" alt="Sunset">
+						<div class="template-description">
+							<h2 class="template-name">Sunset</h2>
+							<p>Интернет-магазин с личным кабинетом</p>
+							<a>10000 р.</a>
+						</div>
 					</div>
 					<div class="template">
+						<div class="browser"></div>
 						<img src="img/catalog/forte.jpg" width="240" height="240" alt="Forte">
+						<div class="template-description">
+							<h2 class="template-name">Forte</h2>
+							<p>Отличный макет для личного блога</p>
+							<a>5000 р.</a>
+						</div>
 					</div>
 					<div class="template">
+						<div class="browser"></div>
 						<img src="img/catalog/modern-organic.jpg" width="240" height="240" alt="Modern Organic Thai">
+						<div class="template-description">
+							<h2 class="template-name">Modern Organic Thai</h2>
+							<p>Сайт для ресторана быстрого питания</p>
+							<a>12000 р.</a>
+						</div>
 					</div>
 					<div class="template">
+						<div class="browser"></div>
 						<img src="img/catalog/avenue.jpg" width="240" height="240" alt="Avenue">
+						<div class="template-description">
+							<h2 class="template-name">Avenue</h2>
+							<p>Макет для блога о путешествиях</p>
+							<a>8000 р.</a>
+						</div>
 					</div>
 					<div class="template">
+						<div class="browser"></div>
 						<img src="img/catalog/dovetail.jpg" width="240" height="240" alt="Dovetail">
+						<div class="template-description">
+							<h2 class="template-name">Dovetail</h2>
+							<p>Интернет-магазин с галереей товаров</p>
+							<a>14000 р.</a>
+						</div>
 					</div>
 					<ul class="pages">
 						<li class="page page-1"><a href="#">1</a></li>
@@ -133,7 +169,7 @@
 			</div>
 		</main>
 		<footer class="main-footer">
-			<section class="address">
+			<div class="map">
 				<div class="address-block">
 					<h3>Nёrds design studio</h3>
 					<p>
@@ -146,14 +182,14 @@
 				<div class="bubble-logo">
 					<img src="img/bubble-logo.png" width="231" height="190" alt="Logotype in a bubble">
 				</div>
-			</section>
+			</div>
 			<section class="footer-social">
 				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
 				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
 				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
 				<div class="discount">
-					<h2>Давайте дружить, это выгодно!</h2>
-					<p>Скидка 10% для друзей из социальных сетей</p>
+					<p class="discount-slogan">Давайте дружить, это выгодно!</p>
+					<p class="discount-text">Скидка 10% для друзей из социальных сетей</p>
 				</div>
 			</section>
 		</footer>
