@@ -1,0 +1,25 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+	font-family: "Roboto Medium", "Roboto", "Arial", sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: auto;
+	color: black;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 30px;
+	color: black;
+}
+
+.template-description > h2 {
+	font-size: 18px;
+	line-height: 8,56px;
+	color: black;
+	text-transform: uppercase;
+}
