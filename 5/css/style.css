@@ -1,0 +1,181 @@
+body {
+	font-size: 16px;
+	line-height: 22px;
+	color: #283136;
+	font-family: "Roboto Medium", "Roboto", "Arial", sans-serif;
+	min-width: 1122px;
+	margin: 0;
+	padding: 0;
+}
+
+.main-header {
+	outline: 1px dashed red;
+	margin-bottom: 75px;
+	
+}
+
+.header-1 {
+	outline: 1px dashed red;
+	margin-bottom: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-2 {
+	outline: 1px dashed red;
+}
+
+.container {
+	width: 890px;
+	margin: 0 auto;
+	padding: 0 10px;
+	outline: 1px dashed red;
+}
+
+.orders {
+	outline: 1px dashed blue;
+	display: flex;
+	justify-content: space-between;
+	min-height: 460px;
+	margin-bottom: 65px;
+}
+
+.order {
+	outline: 1px dashed red;
+	width: 240px;
+	min-height: 300px;
+	padding: 0;
+	margin: 0;
+}
+
+.about-us {
+	outline: 1px dashed red;
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-us-left {
+	outline: 1px dashed blue;
+	width: 620px;
+	min-height: 330px;
+}
+
+.about-us-right {
+	outline: 1px dashed blue;
+	width: 250px;
+	min-height: 330x;
+	padding: 0 10px;
+}
+
+.under-logo-text {
+	display: block;
+}
+
+.partners {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 170px;
+}
+
+.partner {
+	width: 220px;
+	outline: 1px dashed blue;
+}
+
+.catalog {
+	display: flex;
+	justify-content: space-between;
+}
+
+.catalog-left {
+	outline: 1px dashed blue; 
+	width: 240px;
+	min-height: 730px;
+}
+
+.range-fieldset {
+	margin-bottom: 50px;
+}
+
+.layout-fieldset {
+	margin-bottom: 50px;
+}
+
+.features-fieldset {
+	margin-bottom: 65px;
+}
+
+.catalog-right {
+	outline: 1px dashed blue;
+	width: 560px;
+	min-height: 1130px;
+}
+
+.templates {
+	outline: 1px dashed blue;
+	width: 560px;
+	font-size: 0;
+}
+
+.template {
+	display: inline-block;
+	width: 240px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	outline: 1px dashed black;
+	margin-right: 80px;
+	margin-bottom: 80px;
+}
+
+.template:nth-child(even) {
+	margin-right: 0;
+}
+
+.pages {
+	font-size: 16px;
+}
+
+
+.main-footer {
+	outline: 1px dashed red;
+	margin-top: 85px;
+	padding-bottom: 80px;
+}
+
+.map {
+	outline: 1px dashed blue;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 75px;
+	outline: 1px dashed blue;
+}
+
+h1 {
+	font-size: 40px;
+	line-height: auto;
+	color: black;
+}
+
+h2 {
+	font-size: 18px;
+	line-height: 30px;
+	color: black;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+.template-description > h2 {
+	font-size: 18px;
+	line-height: 8.56px;
+	color: black;
+	text-transform: uppercase;
+}
