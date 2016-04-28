@@ -39,10 +39,10 @@
 				</div>
 			</div>
 		</header>
-		<main class="container">
+		<main class="container catalog">
 			<div class="catalog-left">
-				<form action="#" name="options-form" method="get">
-					<fieldset>
+				<form action="#" name="options-form" class="catalog-form" method="get">
+					<fieldset class="range-fieldset">
 						<legend>Стоимость:</legend>
 						<div class="range-filter">
 							<div class="range-controls">
@@ -60,7 +60,7 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="layout-fieldset">
 						<legend>Сетка:</legend>
 						<input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
 						<label for="adaptive-grid">Адаптивная</label><br>
@@ -69,7 +69,7 @@
 						<input type="radio" name="grid-type" value="responsive" id="responsive-grid">
 						<label for="responsive-grid">Резиновая</label><br>
 					</fieldset>
-					<fieldset>
+					<fieldset class="features-fieldset">
 						<legend>Особенности:</legend>
 						<input type="checkbox" name="checkbox-slider" id="slider" checked>
 						<label for="slider">Слайдер</label><br>
@@ -178,7 +178,7 @@
 				</div>
 			</div>
 		</main>
-		<footer class="main-footer">
+		<footer class="main-footer container">
 			<div class="map">
 				<div class="address-block">
 					<h3>Nёrds design studio</h3>
