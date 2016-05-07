@@ -8,7 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header catalog-header">
 			<div class="container">
 				<div class="header-1">
 					<div class="logo-small">
@@ -24,8 +24,8 @@
 							<li>
 								<a href="#">Клиенты</a>
 							</li>
-							<li>
-								<a class="current">Магазин</a>
+							<li class="active">
+								<a>Магазин</a>
 							</li>
 							<li>
 								<a href="#">Контакты</a>
@@ -55,10 +55,8 @@
 								<div class="toggle max-toggle"></div>
 							</div>
 							<div class="price-controls">
-								<span>от</span>
-								<input class="min-price" value="0" type="text">
-								<span>до</span>
-								<input class="max-price" value="15000" type="text">
+								<label class="min-price">от <input name="min-price" value="0" type="text"></label>
+								<label class="max-price">до <input name="max-price" value="15000" type="text">
 							</div>
 						</div>
 					</fieldset>
@@ -196,9 +194,9 @@
 				</div>
 			</div>
 			<section class="footer-social">
-				<a href="#" class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 				<div class="discount">
 					<p class="discount-slogan">Давайте дружить, это выгодно!</p>
 					<p class="discount-text">Скидка 10% для друзей из социальных сетей</p>
