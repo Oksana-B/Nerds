@@ -56,40 +56,59 @@
 								<div class="toggle max-toggle"></div>
 							</div>
 							<div class="price-controls">
-								<label class="min-price">от <input name="min-price" value="0" type="text"></label>
+								<label class="min-price">от  <input name="min-price" value="0" type="text"></label>
 								<label class="max-price">до <input name="max-price" value="15000" type="text">
 							</div>
 						</div>
 					</fieldset>
 					<fieldset class="layout-fieldset">
 						<legend>Сетка:</legend>
-						<input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
-						<label for="adaptive-grid">Адаптивная</label><br>
-						<input type="radio" name="grid-type" value="fixed" id="fixed-grid">
-						<label for="fixed-grid">Фиксированная</label><br>
-						<input type="radio" name="grid-type" value="responsive" id="responsive-grid">
-						<label for="responsive-grid">Резиновая</label><br>
+						<ul>
+							<li>
+								<input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
+								<label for="adaptive-grid">Адаптивная</label><br>
+							</li>
+							<li>
+								<input type="radio" name="grid-type" value="fixed" id="fixed-grid">
+								<label for="fixed-grid">Фиксированная</label><br>
+							</li>
+							<li>
+								<input type="radio" name="grid-type" value="responsive" id="responsive-grid">
+								<label for="responsive-grid">Резиновая</label><br>
+							<li>
+						</ul>
 					</fieldset>
 					<fieldset class="features-fieldset">
+						<ul>
 						<legend>Особенности:</legend>
-						<input type="checkbox" name="checkbox-slider" id="slider" checked>
-						<label for="slider">Слайдер</label><br>
-						<input type="checkbox" name="checkbox-features" id="features">
-						<label for="features">Блок преимуществ</label><br>
-						<input type="checkbox" name="checkbox-news" id="news" checked>
-						<label for="news">Новости</label><br>
-						<input type="checkbox" name="checkbox-gallery" id="gallery">
-						<label for="gallery">Галерея</label><br>
-						<input type="checkbox" name="checkbox-basket" id="basket">
-						<label for="basket">Корзина</label><br>
+							<li>
+								<input type="checkbox" name="checkbox-slider" id="slider" checked>
+								<label for="slider">Слайдер</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-features" id="features">
+								<label for="features">Блок преимуществ</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-news" id="news" checked>
+								<label for="news">Новости</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-gallery" id="gallery">
+								<label for="gallery">Галерея</label><br>
+							<li>
+								<input type="checkbox" name="checkbox-basket" id="basket">
+								<label for="basket">Корзина</label><br>
+							</li>
+						</ul>
 					</fieldset>
-					<button type="submit" class="show-btn">Показать</button>
+					<button type="submit" class="btn catalog-btn">Показать</button>
 				</form>
 			</div>
 			<div class="catalog-right">
 				<div class="sorting-buttons">
-					<span>Сортировать:</span>
 					<ul>
+						<li>Сортировать:</li>
 						<li>
 							<a href="#" class="sorting">По цене</a>
 						</li>
@@ -100,7 +119,7 @@
 						<a href="#" class="sorting">По функционалу</a>
 						</li>
 					</ul>
-					<div class="sorting-order sorting-order-desc"></div>
+					<div class="sorting-order sorting-order-desc active"></div>
 					<div class="sorting-order sorting-order-asc"></div>
 				</div>
 				<div class="templates">
@@ -112,7 +131,7 @@
 						<div class="template-description">
 							<h2 class="template-name">Aviator</h2>
 							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#">8000 р.</a>
+							<a href="#" class="btn">8000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -123,7 +142,7 @@
 						<div class="template-description">
 							<h2 class="template-name">Sunset</h2>
 							<p>Интернет-магазин с личным кабинетом</p>
-							<a href="#">10000 р.</a>
+							<a href="#" class="btn">10000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -134,7 +153,7 @@
 						<div class="template-description">
 							<h2 class="template-name">Forte</h2>
 							<p>Отличный макет для личного блога</p>
-							<a href="#">5000 р.</a>
+							<a href="#" class="btn">5000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -145,7 +164,7 @@
 						<div class="template-description">
 							<h2 class="template-name">Modern Organic Thai</h2>
 							<p>Сайт для ресторана быстрого питания</p>
-							<a href="#">12000 р.</a>
+							<a href="#" class="btn">12000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -156,7 +175,7 @@
 						<div class="template-description">
 							<h2 class="template-name">Avenue</h2>
 							<p>Макет для блога о путешествиях</p>
-							<a href="#">8000 р.</a>
+							<a href="#" class="btn">8000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -167,14 +186,14 @@
 						<div class="template-description">
 							<h2 class="template-name">Dovetail</h2>
 							<p>Интернет-магазин с галереей товаров</p>
-							<a href="#">14000 р.</a>
+							<a href="#" class="btn">14000 р.</a>
 						</div>
 					</div>
 					<ul class="pages">
-						<li class="page page-1 active"><a href="#">1</a></li>
-						<li class="page page-2"><a href="#">2</a></li>
-						<li class="page page-3"><a href="#">3</a></li>
-						<li class="page page-next"><a href="#">Следующая</a></li>
+						<li class="page page-1"><a href="#" class="btn active">1</a></li>
+						<li class="page page-2"><a href="#" class="btn">2</a></li>
+						<li class="page page-3"><a href="#" class="btn">3</a></li>
+						<li class="page page-next"><a href="#" class="btn">Следующая</a></li>
 					</ul>
 				</div>
 			</div>
@@ -195,9 +214,11 @@
 				</div>
 			</div>
 			<section class="footer-social">
-				<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				<div class="social-buttons">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				</div>
 				<div class="discount">
 					<p class="discount-slogan">Давайте дружить, это выгодно!</p>
 					<p class="discount-text">Скидка 10% для друзей из социальных сетей</p>
