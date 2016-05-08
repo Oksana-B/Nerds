@@ -698,6 +698,14 @@ img {
 	border-radius: 50%;
 }
 
+.catalog-form input[type="radio"]:disabled + label::before {
+	opacity: 0.3;
+}
+
+.catalog-form input[type="radio"]:disabled + label::after {
+	opacity: 0.3;
+}
+
 .features-fieldset {
 	margin: 0;
 	margin-bottom: 40px;
@@ -740,6 +748,10 @@ img {
 	background-image: url("../img/sprite.png");
 	background-repeat: no-repeat;
 	background-position: -15px -211px;
+}
+
+.catalog-form input[type="checkbox"]:disabled + label::before {
+	opacity: 0.3;
 }
 
 .catalog-btn {
