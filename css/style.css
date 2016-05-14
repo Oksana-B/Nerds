@@ -1181,18 +1181,151 @@ img {
 }
 
 .pop-up {
-	display: none;
-	position: absolute;
-	top: 276px;
-	left: 630px;
-	width: 630px;
+	position: fixed;
+	bottom: 250px;
+	left: 50%;
+	width: 631px;
 	height: 416px;
 	box-sizing: border-box;
-	padding-left: 80px;
-	padding-right: 90px;
+	margin-left: -325px;
 	color: #000000;
 	background-color: #ffffff;
 	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
+}
+
+.pop-up-close {
+	position: absolute;
+	top: 6px;
+	right: 8px;
+	width: 42px;
+	height: 42px;
+	font-size: 0;
+	background-color: #fb565a;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.pop-up-close::before,
+.pop-up-close::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	right: 18px;
+	width: 5px;
+	height: 25px;
+	background-color: #ffffff;
+}
+
+.pop-up-close::before {
+	transform: rotate(45deg);
+}
+
+.pop-up-close::after {
+	transform: rotate(-45deg);
+}
+
+.pop-up-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 53px;
+	margin-bottom: 50px;
+	margin-left: 80px;
+	margin-right: 91px;
+}
+
+.text-field {
+	width: 220px;
+}
+
+.text-field .textarea {
+	width: 460px;
+}
+
+
+.pop-up-form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
+}
+
+.pop-up-form input {
+	display: block;
+	box-sizing:border-box;
+	width: 220px;
+	margin: 0;
+	margin-bottom: 18px;
+	padding: 8px 14px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
+	opacity: 1.0;
+	text-transform: uppercase;
+	border: 2px solid #d7dcde;
+	outline: none;
+	border-radius: 2px;
+}
+
+.pop-up-form input:hover {
+	border-color: #a2a9ac;
+}
+
+.pop-up-form input:focus {
+	border-color: #56bffb;
+}
+
+.pop-up-form textarea {
+	box-sizing:border-box;
+	width: 460px;
+	min-height: 114px;
+	margin: 0;
+	padding: 8px 14px;
+	font-size: 12px;
+	line-height: 18px;
+	font-family: "Roboto", "Arial", sans-serif;
+	color: #000000;
+	opacity: 1.0;
+	text-transform: uppercase;
+	border: 2px solid #d7dcde;
+	outline: none;
+	border-radius: 2px;
+}
+
+.pop-up-form textarea:hover {
+	border-color: #a2a9ac;
+}
+
+.pop-up-form textarea:focus {
+	border-color: #56bffb;
+}
+
+.pop-up-form input::-webkit-input-placeholder {
+	color:#000000;
+	opacity: 1.0;
+}
+
+.pop-up-form input::-moz-placeholder {
+	color:#000000;
+	opacity: 1.0;
+}
+.pop-up-form input:-moz-placeholder {
+	color:#000000;
+	opacity: 1.0;
+}
+.pop-up-form input:-ms-input-placeholder {
+	color:#000000;
+	opacity: 1.0;
+}
+
+.pop-up-btn {
+	width: 460px;
+	margin-top: 48px;
 }
 
 .sprite {
