@@ -227,8 +227,20 @@
 		</footer>
 		<div class="pop-up">
 			<button class="pop-up-close" type="button" title="Закрыть"></button>
-			<form>
-				<input></input>
+			<form class="pop-up-form">
+				<div class="text-field">
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="your-name" id="name-field" placeholder="Представьтесь, пожалуйста"></input>
+				</div>
+				<div class="text-field">
+					<label for="email-field">Ваш e-mail:</label>
+					<input type="text" name="email" id="email-field" placeholder="Для отправки ответа"></input>
+				</div>
+				<div class="text-field textarea">
+					<label for="letter-field">Текст письма:</label>
+					<textarea name="letter-text" id="letter-field">В свободной форме</textarea>
+				</div>
+				<button class="pop-up-btn btn" type="submit">Отправить</button>
 			</form>
 		</div>
 	</body>
