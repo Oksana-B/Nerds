@@ -886,7 +886,7 @@ img {
 	position: relative;
 	width: auto;
 	height: 30px;
-	background-color: inherit;
+	background-color: #f1f1f1;
 	border-radius: 4px 4px 0 0;
 }
 
@@ -912,7 +912,7 @@ img {
 	margin-right: 0;
 }
 
-.template:hover {
+.template:hover  .browser{
 	background-color: #797979;
 	border-radius: 4px 4px 0 0;
 }
