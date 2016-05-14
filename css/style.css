@@ -53,7 +53,7 @@ img {
 }
 
 .container {
-	width: 900px;
+	width: 880px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -81,6 +81,7 @@ img {
 .main-navigation {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: flex-end;
 	align-items: flex-end;
 	margin: 0;
 	padding: 0;
@@ -94,10 +95,8 @@ img {
 
 .main-navigation ul {
 	display: flex;
-	margin: 0px;
-	margin-right: 20px;
-	margin-left: auto;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -149,7 +148,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left: -21px;
+	left: -23px;
 	width: 15px;
 	height: 15px;
 	background-position: -15px -15px;
@@ -162,7 +161,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left: -21px;
+	left: -23px;
 	width: 15px;
 	height: 15px;
 	background-position: -15px -60px;
@@ -175,7 +174,7 @@ img {
 	content: "";
 	position: absolute;
 	top: 12px;
-	left: -20px;
+	left: -23px;
 	width: 15px;
 	height: 15px;
 	background-position: -15px -15px;
@@ -236,7 +235,7 @@ img {
 }
 
 .slide-text {
-	width: 360px;
+	width: 470px;
 	padding: 30px 0;
 	color: #283136;
 }
@@ -501,28 +500,27 @@ img {
 	justify-content: space-between;
 	align-items: center;
 	width: 880px;
-	margin: 0px;
-	padding: 0px;
-	padding-left: 13px;
-	padding-right: 19px;
-	padding-top: 46px;
-	padding-bottom: 35px;
+	min-height: 168px;
+	margin: 0 5px;
+	padding: 0;
 	border-bottom: 2px solid #eeeeee;
 }
 
 .partner {
 	margin: 0;
-	padding: 0;
-	width: 220px;
-	padding-right: 12px;
+	padding: auto 0;
+	width: 209px;
 	text-align: center;
 	opacity: 0.2;
 }
 
-.partner:first-child {
-	padding-bottom: 7px;
-	padding-right: 0;
-	padding-left: 2px;
+.partners .partner-htmlacademy {
+	margin-top: 10px;
+}
+
+.partners .partner-barbershop {
+	margin-top: 10px;
+	margin-right: 24px;
 }
 
 .partner:hover {
@@ -559,7 +557,7 @@ img {
 .range-fieldset {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 46px;
 }
 
 .range-filter {
@@ -572,7 +570,7 @@ img {
 .range-controls {
 	position: relative;
 	height: 41px;
-	margin-bottom: 15px;
+	margin-bottom: 14px;
 	padding-top: 39px;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -629,7 +627,8 @@ img {
 
 .price-controls input {
 	width: 60px;
-	padding: 8px 12px;
+	margin-left: 10px;
+	padding: 8px 10px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	text-align: center;
@@ -638,10 +637,6 @@ img {
 	border-radius: 5px;
 	outline: none;
 	background: #f1f1f1;
-}
-
-.min-price input {
-	padding: 8px 15px;
 }
 
 .layout-fieldset {
@@ -690,7 +685,7 @@ img {
 .catalog-form input[type="radio"]:checked + label::after {
 	content: "";
 	position: absolute;
-	top: 10px;
+	top: 8px;
 	left: 9px;
 	width: 8px;
 	height: 8px;
@@ -773,7 +768,7 @@ img {
 }
 
 .catalog-right {
-	width: 580px;
+	width: 560px;
 	min-height: 1130px;
 	margin: 0;
 	padding: 0;
@@ -806,7 +801,8 @@ img {
 }
 
 .sorting-buttons a {
-	margin: 0 5px;
+	display: block;
+	margin: 0 4px;
 	color: #000000;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 12px;
@@ -833,16 +829,16 @@ img {
 }
 
 .sorting-order-desc {
-	right: 35px;
 	width: 0;
 	height: 0;
+	right: 19px;
 	border-left: 5px solid transparent;
 	border-right: 5px solid transparent;
 	border-top: 10px solid #c1c1c1;
 }
 
 .sorting-order-asc {
-	right: 20px;
+	right: 1px;
 	width: 0;
 	height: 0;
 	border-left: 5px solid transparent;
@@ -886,10 +882,12 @@ img {
 	border-radius: 4px 4px 0 0;
 }
 
-.template .browser {
+.browser {
 	position: relative;
 	width: auto;
 	height: 30px;
+	background-color: inherit;
+	border-radius: 4px 4px 0 0;
 }
 
 .template .browser span {
@@ -927,7 +925,7 @@ img {
 	position: absolute;
 	top: 50px;
 	left: 20px;
-	display: block;
+	display: none;
 	width: 200px;
 	height: 200px;
 	font-size: 14px;
@@ -937,8 +935,10 @@ img {
 }
 
 .template-description > h2 {
-	margin-top: 34px;
-	margin-bottom: 11px;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 4px;
+	min-height: 34px;
 	font-size: 18px;
 	line-height: 24px;
 	color: black;
@@ -946,8 +946,10 @@ img {
 }
 
 .template-description p {
-	margin: 0 19px;
-	padding: 0;
+	max-height: 36px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0 20px
 }
 
 .template-description .btn {
@@ -988,11 +990,13 @@ img {
 	box-sizing: border-box;
 	margin-top: 0;
 	margin-bottom: 0;
-	padding-top: 9px;
+	padding: 0 auto;
 	color: #000000;
+	font-size: 12px;
+	line-height: 18px;
 	text-decoration: none;
 	background-color: #f1f1f1;
-	border: 2px solid #f2f2f2;
+	border: 0;
 	border-radius: 3px;
 }
 
@@ -1001,20 +1005,27 @@ img {
 }
 
 .page a:hover {
-	padding-top: 11px;
 	background-color: #e5e5e5;
 	border: 0;
 }
 
 .page a:active {
-	padding-top: 11px;
 	background-color: #d5d5d5;
 	border: 0;
 	box-shadow: inset 0 3px 0 0 rgba(0, 0, 0, 0.15);
 }
 
 .page .active {
+	box-sizing: border-box;
+	padding: 8px 0;
 	background-color: #ffffff;
+	border: 2px solid #f2f2f2;
+}
+
+.page .active:hover {
+	background-color: #e5e5e5;
+	border: 0;
+	padding: 10px 0;
 }
 
 .main-footer {
@@ -1025,10 +1036,14 @@ img {
 	width: 1200px;
 }
 
+.catalog-footer {
+	margin-top: 80px;
+}
+
 .main-footer .map {
 	position: relative;
 	width: 1200px;
-	min-height: 416px;
+	height: 416px;
 	margin: 0 auto;
 	padding: 0;
 	background-color: #eeeeee;
@@ -1038,23 +1053,29 @@ img {
 
 .address-block {
 	position: absolute;
-	top: 90px;
+	top: 88px;
 	left: 160px;
 	box-sizing: border-box;
-	padding-top: 10px;
-	padding-left: 21px;
+	padding-top: 12px;
+	padding-left: 20px;
 	padding-right: 21px;
 	padding-bottom: 26px;
 	width: 250px;
 	height: 240px;
+	font-size: 16px;
+	line-height: 20px;
 	background-color: #ffffff;
 }
 
-
 .address-logo {
 	position: absolute;
-	top: 113px;
+	top: 111px;
 	right: 128px;
+}
+
+.catalog-footer  .address-logo {
+	top: 113px;
+	right: 132px;
 }
 
 .address-block h3 {
@@ -1062,20 +1083,30 @@ img {
 }
 
 .address-block p {
+	margin-bottom: 20px;
 	color: #666666;
 }
+
+.address-block .phone {
+	margin-bottom: 30px;
+}
+
+.address-block .btn {
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
 
 .footer-social {
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
-	margin-top: 40px;
+	margin-top: 38px;
 	padding: 0;
 }
 
 .social-buttons {
-	width: 320px;
-	padding-bottom: 5px;
+	width: 330px;
 	font-size: 0;
 }
 
@@ -1083,10 +1114,10 @@ img {
 	position: relative;
 	display: inline-block;
 	vertical-align: bottom;
-	width: 60px;
-	height: 60px;
+	width: 62px;
+	height: 62px;
 	margin: 0;
-	margin-right: 29px;
+	margin-right: 28px;
 	vertical-align: top;
 	border-radius: 50%;
 	text-decoration: none;
@@ -1147,6 +1178,21 @@ img {
 	margin: 0;
 	font-size: 16px;
 	line-height: 22px;
+}
+
+.pop-up {
+	display: none;
+	position: absolute;
+	top: 276px;
+	left: 630px;
+	width: 630px;
+	height: 416px;
+	box-sizing: border-box;
+	padding-left: 80px;
+	padding-right: 90px;
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, 0.75);
 }
 
 .sprite {
