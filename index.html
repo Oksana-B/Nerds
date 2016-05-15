@@ -129,15 +129,16 @@
 			</section>
 		</main>
 		<footer class="main-footer container">
-			<div class="map" id="map">
-				<div class="address-block" id="addres-block">
+			<div class="map">
+				<div class="js-map" id="map"></div>
+				<div class="address-block">
 					<h3>Nёrds design studio</h3>
 					<p>
 						191186, Санкт-Петербург,<br>
 						ул. Б. Конюшенная, д. 19/8<br>
 					</p>
 					<p class="phone">тел. +7 (812) 275-75-75</p>
-					<a href="#" class="btn address-block-btn write-us">Напишите нам</a>
+					<a href="write-us.html" class="btn address-block-btn write-us">Напишите нам</a>
 				</div>
 				<div class="address-logo">
 					<img src="img/bubble-logo.png" width="231" height="190" alt="Logotype in a bubble">
@@ -173,58 +174,7 @@
 				<button class="pop-up-btn btn" type="submit">Отправить</button>
 			</form>
 		</div>
-		<script>
-			var link = document.querySelector(".write-us");
-			
-			var popup = document.querySelector(".pop-up");
-			var close = popup.querySelector(".pop-up-close");
-			
-			var form = popup.querySelector("form");
-			var login = popup.querySelector("[name=your-name]");
-			var email = popup.querySelector("[name=email]");
-			var letter = popup.querySelector("[name=letter-text]"); 
-			
-			var storage = localStorage.getItem("login");
-			
-			link.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.add("pop-up-show");
-				
-				if (storage) {
-					login.value = storage;
-					email.focus();
-				} else {
-					login.focus();
-				}
-			});
-			
-			close.addEventListener("click", function(event) {
-				event.preventDefault();
-				popup.classList.remove("pop-up-show");
-				popup.classList.remove("pop-up-error");
-			});
-			
-			form.addEventListener("submit", function(event) {
-				if (!login.value || !email.value) {
-					event.preventDefault();
-					popup.classList.remove("modal-error");
-					popup.offsetWidth = popup.offsetWidth;
-					popup.classList.add("pop-up-error");
-				} else {
-					localStorage.setItem("login", login.value);
-					localStorage.setItem("email", email.value);
-				}
-			});
-			
-			window.addEventListener("keydown", function(event) {
-				if (event.keyCode === 27) {
-					if (popup.classList.contains("pop-up-show")) {
-						popup.classList.remove("pop-up-show");
-						popup.classList.remove("pop-up-error");
-					}
-				}
-			});
-		</script>
+		<script type="text/javascript" src="js/script.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 	</body>
 </html>
