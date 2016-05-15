@@ -3,10 +3,12 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize-min.css">
+		<link rel="stylesheet" type="text/css" href="css/style-min.css">
 	</head>
 	<body>
-		<header class="main-header">
+		<header class="main-header catalog-header">
 			<div class="container">
 				<div class="header-1">
 					<div class="logo-small">
@@ -22,14 +24,14 @@
 							<li>
 								<a href="#">Клиенты</a>
 							</li>
-							<li>
-								<a href="catalog.html">Магазин</a>
+							<li class="active">
+								<a>Магазин</a>
 							</li>
 							<li>
 								<a href="#">Контакты</a>
 							</li>
 							<li>
-								<a href="#">Корзина</a>
+								<a href="#" class="basket">Корзина</a>
 							</li>
 						</ul>
 					</nav>
@@ -41,7 +43,7 @@
 		</header>
 		<main class="container catalog">
 			<div class="catalog-left">
-				<form action="#" name="options-form" class="catalog-form" method="get">
+				<form action="catalog-form.html" name="options-form" class="catalog-form" method="get">
 					<fieldset class="range-fieldset">
 						<legend>Стоимость:</legend>
 						<div class="range-filter">
@@ -53,42 +55,59 @@
 								<div class="toggle max-toggle"></div>
 							</div>
 							<div class="price-controls">
-								<span>от</span>
-								<input class="min-price" value="0" type="text">
-								<span>до</span>
-								<input class="max-price" value="15000" type="text">
+								<label class="min-price">от<input name="min-price" value="0" type="text"></label>
+								<label class="max-price">до<input name="max-price" value="15000" type="text"></label>
 							</div>
 						</div>
 					</fieldset>
 					<fieldset class="layout-fieldset">
 						<legend>Сетка:</legend>
-						<input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
-						<label for="adaptive-grid">Адаптивная</label><br>
-						<input type="radio" name="grid-type" value="fixed" id="fixed-grid">
-						<label for="fixed-grid">Фиксированная</label><br>
-						<input type="radio" name="grid-type" value="responsive" id="responsive-grid">
-						<label for="responsive-grid">Резиновая</label><br>
+						<ul>
+							<li>
+								<input type="radio" name="grid-type" value="adaptive" id="adaptive-grid" checked>
+								<label for="adaptive-grid">Адаптивная</label><br>
+							</li>
+							<li>
+								<input type="radio" name="grid-type" value="fixed" id="fixed-grid">
+								<label for="fixed-grid">Фиксированная</label><br>
+							</li>
+							<li>
+								<input type="radio" name="grid-type" value="responsive" id="responsive-grid">
+								<label for="responsive-grid">Резиновая</label><br>
+							<li>
+						</ul>
 					</fieldset>
 					<fieldset class="features-fieldset">
 						<legend>Особенности:</legend>
-						<input type="checkbox" name="checkbox-slider" id="slider" checked>
-						<label for="slider">Слайдер</label><br>
-						<input type="checkbox" name="checkbox-features" id="features">
-						<label for="features">Блок преимуществ</label><br>
-						<input type="checkbox" name="checkbox-news" id="news" checked>
-						<label for="news">Новости</label><br>
-						<input type="checkbox" name="checkbox-gallery" id="gallery">
-						<label for="gallery">Галерея</label><br>
-						<input type="checkbox" name="checkbox-basket" id="basket">
-						<label for="basket">Корзина</label><br>
+						<ul>
+							<li>
+								<input type="checkbox" name="checkbox-slider" id="slider" checked>
+								<label for="slider">Слайдер</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-features" id="features">
+								<label for="features">Блок преимуществ</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-news" id="news" checked>
+								<label for="news">Новости</label><br>
+							</li>
+							<li>
+								<input type="checkbox" name="checkbox-gallery" id="gallery">
+								<label for="gallery">Галерея</label><br>
+							<li>
+								<input type="checkbox" name="checkbox-basket" id="basket">
+								<label for="basket">Корзина</label><br>
+							</li>
+						</ul>
 					</fieldset>
-					<button type="submit" class="show-btn">Показать</button>
+					<button type="submit" class="btn catalog-btn">Показать</button>
 				</form>
 			</div>
 			<div class="catalog-right">
 				<div class="sorting-buttons">
-					<span>Сортировать:</span>
 					<ul>
+						<li>Сортировать:</li>
 						<li>
 							<a href="#" class="sorting">По цене</a>
 						</li>
@@ -99,7 +118,7 @@
 						<a href="#" class="sorting">По функционалу</a>
 						</li>
 					</ul>
-					<div class="sorting-order sorting-order-desc"></div>
+					<div class="sorting-order sorting-order-desc active"></div>
 					<div class="sorting-order sorting-order-asc"></div>
 				</div>
 				<div class="templates">
@@ -109,9 +128,9 @@
 						</div>
 						<img src="img/catalog/aviator.jpg" width="240" height="240" alt="Aviator">
 						<div class="template-description">
-							<h2 class="template-name">Aviator</h2>
+							<a href="#"><h2 class="template-name">Aviator</h2></a>
 							<p>Одностраничный макет с авторским дизайном</p>
-							<a href="#">8000 р.</a>
+							<a href="#" class="btn">8000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -120,9 +139,9 @@
 						</div>
 						<img src="img/catalog/sunset.jpg" width="240" height="240" alt="Sunset">
 						<div class="template-description">
-							<h2 class="template-name">Sunset</h2>
-							<p>Интернет-магазин с личным кабинетом</p>
-							<a href="#">10000 р.</a>
+							<a href="#"><h2 class="template-name">Sunset</h2></a>
+							<p>Интернет-магазин<br> с личным кабинетом</p>
+							<a href="#" class="btn">10000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -131,9 +150,9 @@
 						</div>
 						<img src="img/catalog/forte.jpg" width="240" height="240" alt="Forte">
 						<div class="template-description">
-							<h2 class="template-name">Forte</h2>
-							<p>Отличный макет для личного блога</p>
-							<a href="#">5000 р.</a>
+							<a href="#"><h2 class="template-name">Forte</h2></a>
+							<p>Отличный макет<br> для личного блога</p>
+							<a href="#" class="btn">5000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -142,9 +161,9 @@
 						</div>
 						<img src="img/catalog/modern-organic.jpg" width="240" height="240" alt="Modern Organic Thai">
 						<div class="template-description">
-							<h2 class="template-name">Modern Organic Thai</h2>
+							<a href="#"><h2 class="template-name">Modern Organic Thai</h2></a>
 							<p>Сайт для ресторана быстрого питания</p>
-							<a href="#">12000 р.</a>
+							<a href="#" class="btn">12000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -153,9 +172,9 @@
 						</div>
 						<img src="img/catalog/avenue.jpg" width="240" height="240" alt="Avenue">
 						<div class="template-description">
-							<h2 class="template-name">Avenue</h2>
-							<p>Макет для блога о путешествиях</p>
-							<a href="#">8000 р.</a>
+							<a href="#"><h2 class="template-name">Avenue</h2></a>
+							<p>Макет для блога<br> о путешествиях</p>
+							<a href="#" class="btn">8000 р.</a>
 						</div>
 					</div>
 					<div class="template">
@@ -164,44 +183,67 @@
 						</div>
 						<img src="img/catalog/dovetail.jpg" width="240" height="240" alt="Dovetail">
 						<div class="template-description">
-							<h2 class="template-name">Dovetail</h2>
-							<p>Интернет-магазин с галереей товаров</p>
-							<a href="#">14000 р.</a>
+							<a href="#"><h2 class="template-name">Dovetail</h2></a>
+							<p>Интернет-магазин<br> с галереей товаров</p>
+							<a href="#" class="btn">14000 р.</a>
 						</div>
 					</div>
 					<ul class="pages">
-						<li class="page page-1 active"><a href="#">1</a></li>
-						<li class="page page-2"><a href="#">2</a></li>
-						<li class="page page-3"><a href="#">3</a></li>
-						<li class="page page-next"><a href="#">Следующая</a></li>
+						<li class="page page-1"><a href="#" class="btn active">1</a></li>
+						<li class="page page-2"><a href="#" class="btn">2</a></li>
+						<li class="page page-3"><a href="#" class="btn">3</a></li>
+						<li class="page page-next"><a href="#" class="btn">Следующая</a></li>
 					</ul>
 				</div>
 			</div>
 		</main>
-		<footer class="main-footer container">
+		<footer class="main-footer catalog-footer container">
 			<div class="map">
+				<div class="js-map" id="map"></div>
 				<div class="address-block">
 					<h3>Nёrds design studio</h3>
 					<p>
 						191186, Санкт-Петербург,<br>
-						ул. Б. Конюшенная, д. 19.8<br>
+						ул. Б. Конюшенная, д. 19/8<br>
 					</p>
-					<p>тел. +7(812)275-75-75</p>
-					<a href="#" class="contact-us-btn">Напишите нам</a>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
+					<a href="write-us.html" class="btn address-block-btn write-us">Напишите нам</a>
 				</div>
-				<div class="bubble-logo">
+				<div class="address-logo">
 					<img src="img/bubble-logo.png" width="231" height="190" alt="Logotype in a bubble">
 				</div>
 			</div>
-			<section class="footer-social">
-				<a href="#" class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a href="#" class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a href="#" class="social-btn social-btn-inst" href="#">Инстаграм</a>
+			<section class="footer-social container">
+				<div class="social-buttons">
+					<a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+					<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+					<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+				</div>
 				<div class="discount">
 					<p class="discount-slogan">Давайте дружить, это выгодно!</p>
 					<p class="discount-text">Скидка 10% для друзей из социальных сетей</p>
 				</div>
 			</section>
 		</footer>
+		<div class="pop-up">
+			<button class="pop-up-close" type="button" title="Закрыть"></button>
+			<form class="pop-up-form" action="#" method="get">
+				<div class="text-field">
+					<label for="name-field">Ваше имя:</label>
+					<input type="text" name="your-name" id="name-field" placeholder="Представьтесь, пожалуйста">
+				</div>
+				<div class="text-field">
+					<label for="email-field">Ваш e-mail:</label>
+					<input type="text" name="email" id="email-field" placeholder="Для отправки ответа">
+				</div>
+				<div class="text-field textarea">
+					<label for="letter-field">Текст письма:</label>
+					<textarea name="letter-text" id="letter-field">В свободной форме</textarea>
+				</div>
+				<button class="pop-up-btn btn" type="submit">Отправить</button>
+			</form>
+		</div>
+		<script type="text/javascript" src="js/script-min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 	</body>
 </html>
